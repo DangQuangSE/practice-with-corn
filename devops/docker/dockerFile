@@ -1,0 +1,37 @@
+# ========================================================
+# STAGE 1: Biên dịch mã nguồn (Build Stage)
+# ========================================================
+FROM maven:3.9.6-eclipse-temurin-21-alpine AS builder
+
+# Thiết lập thư mục làm việc bên trong container
+WORKDIR /app
+
+# Copy file cấu hình maven trước để tận dụng Docker Cache cho các dependency
+COPY pom.xml .
+
+# Tải trước các dependencies (nếu pom.xml không đổi, bước này sẽ được cache, chạy rất nhanh)
+RUN mvn dependency:go-offline -B
+
+# Copy toàn bộ thư mục source code vào container
+COPY src ./src
+
+# Biên dịch và đóng gói ứng dụng thành file .jar, bỏ qua chạy unit test để tăng tốc độ build
+RUN mvn clean package -DskipTests
+
+# ========================================================
+# STAGE 2: Khởi chạy ứng dụng thực tế (Runtime Stage)
+# ========================================================
+FROM eclipse-temurin:21-jre-alpine
+
+WORKDIR /app
+
+# Copy file .jar được sinh ra từ Stage 1 (builder) sang Stage 2
+# Lưu ý: Thay thế tên file 'app.jar' tương ứng với cấu hình artifactId trong file pom.xml của bạn
+COPY --from=builder /app/target/*.jar app.jar
+
+# Khai báo port mà container sẽ mở ra bên ngoài (trùng với port của Spring Boot)
+EXPOSE 8080
+
+# Lệnh tối ưu để chạy ứng dụng Java trong container môi trường Production
+# Các tham số giúp tối ưu hóa việc quản lý bộ nhớ của JVM trong môi trường container
+ENTRYPOINT ["java", "-jar", "-Djava.security.egd=file:/dev/./urandom", "app.jar"]
