@@ -1,9 +1,10 @@
 /**
  * Bài 1.3 — Đảo ngược một chuỗi
  *
- * Input: "corn"  ->  Output: "nroc"
+ * Input: "corn" -> Output: "nroc"
  *
- * Gợi ý: StringBuilder.reverse() là cách nhanh, nhưng hãy tự code bằng 2 con trỏ
+ * Gợi ý: StringBuilder.reverse() là cách nhanh, nhưng hãy tự code bằng 2 con
+ * trỏ
  * trên char[] để hiểu bản chất — phỏng vấn thường yêu cầu cách thứ hai.
  * Mục tiêu: O(n) thời gian.
  */
@@ -11,7 +12,13 @@ public class ReverseString {
 
     public static String solve(String s) {
         // TODO: viết lời giải ở đây
-        return "";
+        if (s.length() == 1)
+            return s;
+        StringBuilder result = new StringBuilder();
+        for (int i = s.length() - 1; i >= 0; i--) {
+            result.append(s.charAt(i));
+        }
+        return result.toString();
     }
 
     public static void main(String[] args) {
