@@ -13,10 +13,28 @@ public class Palindrome {
 
     public static boolean solve(String s) {
         // TODO: viết lời giải ở đây
-        if (s.length() == 0)
-            return false;
+        if (s.length() <= 1)
+            return true;
+        int mid = s.length() / 2;
+        int left = 0;
+        int right = s.length() - 1;
+        while (left < mid) {
+            if (!Character.isLetterOrDigit(s.charAt((left)))) {
+                left++;
+                continue;
+            }
+            if (!Character.isLetterOrDigit(s.charAt(right))) {
+                right--;
+                continue;
+            }
+            if (!(Character.toLowerCase(s.charAt(left)) == Character.toLowerCase(s.charAt(right)))) {
+                return false;
+            }
+            left++;
+            right--;
+        }
 
-        return false;
+        return true;
     }
 
     public static void main(String[] args) {
@@ -44,7 +62,7 @@ public class Palindrome {
 
         Check.expect("digits only", solve("12321"), true);
 
-        Check.expect("punctuation only", solve(".,"), true);
+        Check.expect("punctuation only", solve(".,121"), true);
 
         Check.summary();
     }
