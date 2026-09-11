@@ -1,19 +1,35 @@
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Bài 1.6 — Chuỗi con không lặp ký tự dài nhất
  *
- * Input: "abcabcbb"  ->  Output: 3 (chuỗi "abc")
+ * Input: "abcabcbb" -> Output: 3 (chuỗi "abc")
  *
  * Trả về ĐỘ DÀI, không phải chuỗi.
  * Mục tiêu: O(n) thời gian bằng sliding window.
  *
  * Chú ý 2 test "dvdf" và "abba" — đây là chỗ lời giải sai hay lộ ra:
- * khi gặp ký tự trùng, con trỏ trái chỉ được phép TIẾN, không được lùi lại phía sau.
+ * khi gặp ký tự trùng, con trỏ trái chỉ được phép TIẾN, không được lùi lại phía
+ * sau.
  */
 public class LongestUniqueSubstring {
 
     public static int solve(String s) {
-        // TODO: viết lời giải ở đây
-        return 0;
+        Set<Character> window = new HashSet<>();
+        int max = 0;
+        int left = 0;
+        for (int right = 0; right < s.length(); right++) {
+            char c = s.charAt(right);
+            if (window.contains(c)) {
+                window.remove(c);
+                left++;
+            }
+            window.add(c);
+            max = Math.max(max, right - left + 1);
+        }
+
+        return max;
     }
 
     public static void main(String[] args) {
