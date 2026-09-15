@@ -21,8 +21,8 @@ public class LongestUniqueSubstring {
         int left = 0;
         for (int right = 0; right < s.length(); right++) {
             char c = s.charAt(right);
-            if (window.contains(c)) {
-                window.remove(c);
+            while (window.contains(c)) {
+                window.remove(s.charAt(left));
                 left++;
             }
             window.add(c);
