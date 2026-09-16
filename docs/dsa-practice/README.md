@@ -29,6 +29,12 @@ Mỗi chủ đề có 2 file riêng cho **Java** và **Node.js** (JavaScript), c
 | 10 | Quy hoạch động (Dynamic Programming) | [java.md](10-dynamic-programming/java.md) | [nodejs.md](10-dynamic-programming/nodejs.md) | Nâng cao |
 | 11 | Chủ đề nâng cao (Trie, Union-Find, Sliding Window, Bit Manipulation) | [java.md](11-advanced/java.md) | [nodejs.md](11-advanced/nodejs.md) | Nâng cao |
 
+## Bộ bài bổ sung
+
+| Chủ đề | Java | Node.js | Độ khó |
+|---|---|---|---|
+| Sliding Window, Kadane, Prefix & Suffix | [java.md](02-sliding-window-kadane-prefix-suffix/java.md) | — | Medium |
+
 ## Bảng độ phức tạp cần nhớ (Big-O cheat sheet)
 
 | Cấu trúc dữ liệu | Truy cập | Tìm kiếm | Thêm | Xóa |

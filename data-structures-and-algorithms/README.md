@@ -47,6 +47,25 @@ vì VSCode hiển thị đúng.
 | 1.8 | [ProductExceptSelf.java](01-arrays-and-strings/ProductExceptSelf.java) | Prefix / suffix product |
 | 1.9 | [TrappingRainWater.java](01-arrays-and-strings/TrappingRainWater.java) | Two pointers |
 
+## Chủ đề 2 — Sliding Window, Kadane, Prefix & Suffix (Medium)
+
+Tài liệu Java: [02-sliding-window-kadane-prefix-suffix/java.md](../docs/dsa-practice/02-sliding-window-kadane-prefix-suffix/java.md)
+
+| Bài | File | Kỹ thuật cần dùng |
+|---|---|---|
+| 2.1 | [MinimumSizeSubarraySum.java](02-sliding-window-kadane-prefix-suffix/MinimumSizeSubarraySum.java) | Sliding window biến đổi |
+| 2.2 | [PermutationInString.java](02-sliding-window-kadane-prefix-suffix/PermutationInString.java) | Sliding window cố định |
+| 2.3 | [LongestRepeatingCharacterReplacement.java](02-sliding-window-kadane-prefix-suffix/LongestRepeatingCharacterReplacement.java) | Sliding window + frequency |
+| 2.4 | [MaximumProductSubarray.java](02-sliding-window-kadane-prefix-suffix/MaximumProductSubarray.java) | Kadane với max/min |
+| 2.5 | [MaximumSumCircularSubarray.java](02-sliding-window-kadane-prefix-suffix/MaximumSumCircularSubarray.java) | Kadane vòng |
+| 2.6 | [MaximumSubarrayOneDeletion.java](02-sliding-window-kadane-prefix-suffix/MaximumSubarrayOneDeletion.java) | Kadane + trạng thái |
+| 2.7 | [SubarraySumEqualsK.java](02-sliding-window-kadane-prefix-suffix/SubarraySumEqualsK.java) | Prefix sum + HashMap |
+| 2.8 | [PartitionDisjoint.java](02-sliding-window-kadane-prefix-suffix/PartitionDisjoint.java) | Prefix max + suffix min |
+| 2.9 | [ShortestSubarrayToRemove.java](02-sliding-window-kadane-prefix-suffix/ShortestSubarrayToRemove.java) | Prefix / suffix + two pointers |
+
+Mỗi bài có test sẵn nhưng phần `solve()` để trống có chủ ý — hãy làm từng bài
+và chạy `java TenFile.java` trong đúng thư mục của chủ đề.
+
 Test đã viết sẵn, bạn chỉ cần điền phần `solve()`. Một vài test có thể pass ngay từ đầu
 do trùng với giá trị trả về mặc định của khung (ví dụ hàm trả `0` mà đáp án đúng cũng là `0`) —
 đừng nhầm đó là đã xong, cứ nhìn vào dòng tổng kết.
