@@ -106,6 +106,16 @@ Input: `[[1,3],[2,6],[8,10],[15,18]]` → Output: `[[1,6],[8,10],[15,18]]`
 
 <details><summary>Gợi ý</summary>Sort theo điểm bắt đầu, sau đó duyệt và gộp các interval chồng lấn (so sánh điểm kết thúc interval cuối trong kết quả với điểm bắt đầu interval hiện tại).</details>
 
+---
+
+**Bài 6.10 — Find First and Last Position of Element** (Medium)
+
+Trong mảng đã sắp xếp, tìm vị trí đầu và cuối của target; nếu không có trả về [-1,-1].
+
+Input: nums=[5,7,7,8,8,10], target=8 -> Output: [3,4]
+
+<details><summary>Gợi ý</summary>Dùng hai binary search: một tìm lower bound, một tìm vị trí đầu tiên lớn hơn target rồi trừ 1.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Tự cài được Merge Sort và Quick Sort từ đầu, không nhìn code

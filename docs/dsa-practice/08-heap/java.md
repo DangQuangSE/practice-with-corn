@@ -107,6 +107,26 @@ Input: `points=[[1,3],[-2,2]], k=1` → Output: `[[-2,2]]`
 
 <details><summary>Gợi ý</summary>Dùng max-heap kích thước k theo khoảng cách bình phương (tránh tính sqrt không cần thiết).</details>
 
+---
+
+**Bài 8.9 — Reorganize String** (Medium)
+
+Sắp xếp lại ký tự sao cho hai ký tự kề nhau không giống nhau; nếu không thể, trả về chuỗi rỗng.
+
+Input: aab -> Output: aba
+
+<details><summary>Gợi ý</summary>Dùng max-heap theo tần suất, mỗi lần lấy hai ký tự có tần suất cao nhất rồi đưa lại heap sau khi dùng.</details>
+
+---
+
+**Bài 8.10 — IPO / Maximize Capital** (Medium)
+
+Chọn tối đa k dự án để tối đa hóa vốn; một dự án chỉ được chọn khi vốn hiện tại đủ lớn.
+
+Input: k=2, w=0, profits=[1,2,3], capital=[0,1,1] -> Output: 4
+
+<details><summary>Gợi ý</summary>Sắp xếp dự án theo capital yêu cầu, đưa các dự án đủ điều kiện vào max-heap theo profit rồi chọn profit lớn nhất.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Tự cài được Min-Heap/Max-Heap từ đầu (sift up/sift down)

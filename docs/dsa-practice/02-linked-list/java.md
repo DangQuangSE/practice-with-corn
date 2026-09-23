@@ -103,6 +103,16 @@ Input: `[[1,4,5],[1,3,4],[2,6]]` → Output: `1->1->2->3->4->4->5->6`
 
 <details><summary>Gợi ý</summary>Dùng `PriorityQueue<ListNode>` (min-heap) để luôn lấy node nhỏ nhất trong K danh sách, hoặc chia để trị (merge từng cặp 2 danh sách theo bài 2.6). Độ phức tạp mục tiêu: O(N log k).</details>
 
+---
+
+**Bài 2.10 — Tìm giao điểm của hai danh sách liên kết (Intersection of Two Linked Lists)** (Medium)
+
+Tìm node đầu tiên mà hai danh sách cùng trỏ tới; nếu không có giao điểm, trả về null.
+
+Input: A = 3 -> 7 -> 8 -> 10, B = 99 -> 8 -> 10 -> Output: node 8
+
+<details><summary>Gợi ý</summary>Dùng hai con trỏ. Khi một con trỏ đi hết danh sách, chuyển nó sang head của danh sách còn lại. Hai con trỏ sẽ đi cùng tổng số bước.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Tự viết được Reverse Linked List bằng cả vòng lặp và đệ quy

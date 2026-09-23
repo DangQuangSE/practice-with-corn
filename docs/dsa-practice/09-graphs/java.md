@@ -117,6 +117,16 @@ Biến đổi từ `beginWord` thành `endWord`, mỗi lần đổi 1 ký tự, 
 
 <details><summary>Gợi ý</summary>Coi mỗi từ là 1 node, cạnh nối 2 từ chỉ khác nhau 1 ký tự. BFS từ `beginWord`. Để sinh hàng xóm hiệu quả, với mỗi từ thử thay từng vị trí bằng 26 ký tự và kiểm tra có trong wordList (dùng HashSet để tra cứu O(1)) không, thay vì so sánh từng cặp từ O(n²).</details>
 
+---
+
+**Bài 9.10 — Cheapest Flights Within K Stops** (Medium)
+
+Với các chuyến bay có giá, tìm giá rẻ nhất từ src tới dst qua tối đa k điểm dừng.
+
+Input: [[0,1,100],[1,2,100],[2,3,100],[0,3,500]], k=1 -> Output: 500
+
+<details><summary>Gợi ý</summary>Dùng Bellman-Ford giới hạn k+1 lượt relax, hoặc BFS theo số điểm dừng nếu muốn theo dõi từng level.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Tự code được DFS và BFS từ đầu (cả đệ quy và lặp)

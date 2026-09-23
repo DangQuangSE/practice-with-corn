@@ -84,6 +84,26 @@ Input: `[2,1,5,6,2,3]` → Output: `10`
 
 <details><summary>Gợi ý</summary>Dùng mảng cố định kích thước k, 2 con trỏ `head` và `count` để biết vị trí thêm/xóa và biết queue đầy/rỗng.</details>
 
+---
+
+**Bài 3.9 — Asteroid Collision** (Medium)
+
+Mô phỏng va chạm giữa các thiên thạch: số dương bay sang phải, số âm bay sang trái.
+
+Input: [5,10,-5] -> Output: [5,10]
+
+<details><summary>Gợi ý</summary>Dùng stack. Chỉ có thể va chạm khi phần tử trên stack dương và thiên thạch mới âm; xử lý lặp tới khi va chạm kết thúc.</details>
+
+---
+
+**Bài 3.10 — Simplify Path** (Medium)
+
+Chuẩn hóa đường dẫn tuyệt đối Unix, xử lý ., .. và nhiều dấu slash.
+
+Input: /home//foo/ -> Output: /home/foo
+
+<details><summary>Gợi ý</summary>Tách path thành token, dùng stack thư mục; bỏ token rỗng và ., còn .. thì pop nếu stack không rỗng.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Hiểu khi nào dùng Stack, khi nào dùng Queue

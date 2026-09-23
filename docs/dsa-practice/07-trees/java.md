@@ -110,6 +110,16 @@ Chuyển cây thành chuỗi và khôi phục lại từ chuỗi đó.
 
 <details><summary>Gợi ý</summary>Dùng preorder traversal, đánh dấu node null bằng ký tự đặc biệt (ví dụ "#"). Deserialize bằng cách đọc lần lượt token và đệ quy xây lại.</details>
 
+---
+
+**Bài 7.10 — Kth Smallest Element in a BST** (Medium)
+
+Tìm phần tử nhỏ thứ k trong một Binary Search Tree.
+
+Input: BST có inorder [1,2,3,4], k=2 -> Output: 2
+
+<details><summary>Gợi ý</summary>Inorder traversal của BST cho các giá trị theo thứ tự tăng dần. Dừng khi đã thăm đủ k node.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Phân biệt được Preorder/Inorder/Postorder/Level-order và biết khi nào dùng cái nào

@@ -53,15 +53,22 @@ Tài liệu Java: [02-sliding-window-kadane-prefix-suffix/java.md](../docs/dsa-p
 
 | Bài | File | Kỹ thuật cần dùng |
 |---|---|---|
-| 2.1 | [MinimumSizeSubarraySum.java](02-sliding-window-kadane-prefix-suffix/MinimumSizeSubarraySum.java) | Sliding window biến đổi |
-| 2.2 | [PermutationInString.java](02-sliding-window-kadane-prefix-suffix/PermutationInString.java) | Sliding window cố định |
-| 2.3 | [LongestRepeatingCharacterReplacement.java](02-sliding-window-kadane-prefix-suffix/LongestRepeatingCharacterReplacement.java) | Sliding window + frequency |
-| 2.4 | [MaximumProductSubarray.java](02-sliding-window-kadane-prefix-suffix/MaximumProductSubarray.java) | Kadane với max/min |
-| 2.5 | [MaximumSumCircularSubarray.java](02-sliding-window-kadane-prefix-suffix/MaximumSumCircularSubarray.java) | Kadane vòng |
-| 2.6 | [MaximumSubarrayOneDeletion.java](02-sliding-window-kadane-prefix-suffix/MaximumSubarrayOneDeletion.java) | Kadane + trạng thái |
-| 2.7 | [SubarraySumEqualsK.java](02-sliding-window-kadane-prefix-suffix/SubarraySumEqualsK.java) | Prefix sum + HashMap |
-| 2.8 | [PartitionDisjoint.java](02-sliding-window-kadane-prefix-suffix/PartitionDisjoint.java) | Prefix max + suffix min |
-| 2.9 | [ShortestSubarrayToRemove.java](02-sliding-window-kadane-prefix-suffix/ShortestSubarrayToRemove.java) | Prefix / suffix + two pointers |
+| 2.1 | [MinimumSizeSubarraySum.java](01.1-sliding-window-kadane-prefix-suffix/MinimumSizeSubarraySum.java) | Sliding window biến đổi |
+| 2.2 | [PermutationInString.java](01.1-sliding-window-kadane-prefix-suffix/PermutationInString.java) | Sliding window cố định |
+| 2.3 | [LongestRepeatingCharacterReplacement.java](01.1-sliding-window-kadane-prefix-suffix/LongestRepeatingCharacterReplacement.java) | Sliding window + frequency |
+| 2.4 | [MaximumProductSubarray.java](01.1-sliding-window-kadane-prefix-suffix/MaximumProductSubarray.java) | Kadane với max/min |
+| 2.5 | [MaximumSumCircularSubarray.java](01.1-sliding-window-kadane-prefix-suffix/MaximumSumCircularSubarray.java) | Kadane vòng |
+| 2.6 | [MaximumSubarrayOneDeletion.java](01.1-sliding-window-kadane-prefix-suffix/MaximumSubarrayOneDeletion.java) | Kadane + trạng thái |
+| 2.7 | [SubarraySumEqualsK.java](01.1-sliding-window-kadane-prefix-suffix/SubarraySumEqualsK.java) | Prefix sum + HashMap |
+| 2.8 | [PartitionDisjoint.java](01.1-sliding-window-kadane-prefix-suffix/PartitionDisjoint.java) | Prefix max + suffix min |
+| 2.9 | [ShortestSubarrayToRemove.java](01.1-sliding-window-kadane-prefix-suffix/ShortestSubarrayToRemove.java) | Prefix / suffix + two pointers |
+| 2.10 | [MaximumAverageSubarray.java](01.1-sliding-window-kadane-prefix-suffix/MaximumAverageSubarray.java) | Sliding window kích thước cố định |
+
+## Bộ bài Java theo từng chủ đề
+
+Danh sách khung bài luyện tập 10 bài mỗi chủ đề (3 Easy, 7 Medium) nằm trong
+[PRACTICE_PLAN.md](PRACTICE_PLAN.md). Các chủ đề còn lại có thư mục Java riêng,
+Check.java riêng và test mẫu trong từng file.
 
 Mỗi bài có test sẵn nhưng phần `solve()` để trống có chủ ý — hãy làm từng bài
 và chạy `java TenFile.java` trong đúng thư mục của chủ đề.

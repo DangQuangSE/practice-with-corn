@@ -3,6 +3,8 @@
 Bộ tài liệu này dùng để ôn luyện CTDL-GT một cách bài bản, đi từ **cơ bản → trung bình → nâng cao**.
 Mỗi chủ đề có 2 file riêng cho **Java** và **Node.js** (JavaScript), cùng cấu trúc để bạn so sánh cách triển khai giữa 2 ngôn ngữ.
 
+Khung bài tập Java trong repository: [data-structures-and-algorithms/PRACTICE_PLAN.md](../../data-structures-and-algorithms/PRACTICE_PLAN.md).
+
 ## Cách dùng tài liệu này
 
 1. Đọc phần **Lý thuyết** trước để nắm bản chất, độ phức tạp (Big-O), khi nào dùng.

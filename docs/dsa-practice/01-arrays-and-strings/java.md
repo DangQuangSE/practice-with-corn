@@ -120,6 +120,16 @@ Input: `[0,1,0,2,1,0,1,3,2,1,2,1]` → Output: `6`
 
 <details><summary>Gợi ý</summary>Với mỗi vị trí i, lượng nước giữ được = `min(maxLeft[i], maxRight[i]) - height[i]`. Có thể tối ưu bằng 2 con trỏ trái/phải duyệt 1 lần, O(1) bộ nhớ phụ. Đây là bài kinh điển thường gặp trong phỏng vấn.</details>
 
+---
+
+**Bài 1.10 — Three Sum** (Medium)
+
+Tìm mọi bộ ba phần tử có tổng bằng 0; không trả về bộ ba trùng nhau.
+
+Input: [-1,0,1,2,-1,-4] -> Output: [[-1,-1,2],[-1,0,1]]
+
+<details><summary>Gợi ý</summary>Sắp xếp mảng, cố định từng phần tử rồi dùng hai con trỏ cho phần còn lại. Bỏ qua giá trị trùng ở cả vị trí cố định và hai con trỏ.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Tự làm lại được Two Sum không nhìn gợi ý

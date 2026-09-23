@@ -115,6 +115,16 @@ Cho lưới ký tự 2D và 1 từ, kiểm tra từ có thể tạo từ các k�
 
 <details><summary>Gợi ý</summary>Backtracking: tìm ô trống, thử từng số 1-9, kiểm tra hợp lệ theo hàng/cột/ô vuông 3x3, đệ quy tiếp; nếu không có số hợp lệ nào dẫn tới giải được, quay lui (đặt lại `'.'`).</details>
 
+---
+
+**Bài 5.10 — Letter Combinations of a Phone Number** (Medium)
+
+Với chuỗi chữ số từ 2 đến 9, sinh mọi chuỗi ký tự có thể tạo từ bàn phím điện thoại.
+
+Input: 23 -> Output: [ad,ae,af,bd,be,bf,cd,ce,cf]
+
+<details><summary>Gợi ý</summary>Mỗi chữ số tạo ra một nhánh lựa chọn. Khi độ dài chuỗi hiện tại bằng số chữ số, thêm kết quả rồi quay lui.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Hiểu rõ base case và recursive case

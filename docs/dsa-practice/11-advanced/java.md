@@ -129,6 +129,16 @@ Thiết kế cấu trúc hỗ trợ `addWord(word)` và `search(word)` trong đ�
 
 <details><summary>Gợi ý</summary>Dùng Trie. Khi search gặp `.`, phải thử đệ quy với TẤT CẢ children của node hiện tại (DFS trên Trie) thay vì chỉ 1 nhánh cố định.</details>
 
+---
+
+**Bài 11.10 — Maximum XOR for Each Query** (Medium)
+
+Với mỗi prefix XOR của mảng, chọn số x trong [0, 2^maximumBit - 1] để XOR đạt lớn nhất.
+
+Input: nums=[0,1,1,3], maximumBit=2 -> Output: [0,3,2,3]
+
+<details><summary>Gợi ý</summary>Tổng XOR của toàn prefix và mask toàn bit 1 cho biết ngay giá trị x tối ưu; xử lý prefix theo thứ tự ngược.</details>
+
 ## Checklist hoàn thành lộ trình
 
 - [ ] Tự cài được Trie từ đầu và giải Word Search II

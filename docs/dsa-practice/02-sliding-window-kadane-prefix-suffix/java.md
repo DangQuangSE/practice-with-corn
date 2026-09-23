@@ -96,6 +96,16 @@ Input: `[1,2,3,10,4,2,3,5]` → Output: `3`
 
 <details><summary>Gợi ý</summary>Tìm đoạn không giảm dài nhất ở đầu và ở cuối. Sau đó dùng hai con trỏ để thử nối từng phần tử của prefix với suffix; phần ở giữa là đoạn cần xóa.</details>
 
+---
+
+**Bài 2.10 — Maximum Average Subarray I** (Medium)
+
+Tìm giá trị trung bình lớn nhất của một dãy con liên tiếp có đúng k phần tử.
+
+Input: nums=[1,12,-5,-6,50,3], k=4 -> Output: 12.75
+
+<details><summary>Gợi ý</summary>Tính tổng cửa sổ đầu tiên, sau đó mỗi bước trừ phần tử rời khỏi cửa sổ và cộng phần tử mới. Chỉ cần giữ tổng lớn nhất.</details>
+
 ## Checklist
 
 - [ ] Phân biệt sliding window kích thước cố định và kích thước biến đổi

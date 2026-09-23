@@ -94,6 +94,16 @@ Cho 4 mảng A, B, C, D, đếm số tuple `(i,j,k,l)` sao cho `A[i]+B[j]+C[k]+D
 
 <details><summary>Gợi ý</summary>Dùng array of buckets (mỗi bucket là linked list các cặp key-value). Hash function: `index = hash(key) % capacity`. Xử lý collision bằng chuỗi liên kết (chaining).</details>
 
+---
+
+**Bài 4.10 — Contains Duplicate II** (Medium)
+
+Kiểm tra có hai chỉ số i, j sao cho nums[i] == nums[j] và j - i <= k.
+
+Input: nums=[1,2,3,1], k=3 -> Output: true
+
+<details><summary>Gợi ý</summary>Lưu vị trí gần nhất của mỗi giá trị trong HashMap. Khi gặp lại, kiểm tra khoảng cách trước khi cập nhật vị trí mới.</details>
+
 ## Checklist trước khi qua chủ đề tiếp theo
 
 - [ ] Hiểu cách HashMap xử lý collision (chaining)
