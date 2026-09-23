@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * Bài 1.12 — Longest Repeating Character Replacement
  *
@@ -12,7 +17,24 @@ public class LongestRepeatingCharacterReplacement {
 
     public static int solve(String s, int k) {
         // TODO: viết lời giải ở đây
-        return 0;
+
+        int[] freq = new int[26];
+        int maxFreq = 0;
+        int left = 0;
+        int longest = 0;
+        for (int right = 0; right < s.length(); right++) {
+            int index = s.charAt(right) - 'A'; // character's value
+            freq[index]++; // frequency of character
+            maxFreq = Math.max(maxFreq, freq[index]); // find maxFreq
+            int windowLength = right - left + 1;
+            while (windowLength - maxFreq > k) {
+                freq[s.charAt(left) - 'A']--;
+                left++;
+                windowLength = right - left + 1;
+            }
+            longest = Math.max(longest, windowLength);
+        }
+        return longest;
     }
 
     public static void main(String[] args) {
