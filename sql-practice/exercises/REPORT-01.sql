@@ -1,0 +1,6 @@
+-- REPORT-01 (Core / Medium): filtered order summary over the shared synthetic PostgreSQL schema.
+-- Parameters to support: :from_inclusive, :to_exclusive, :status (nullable).
+-- Return one row per status: order_count, total_amount, average_amount.
+-- TODO: write a parameterized aggregate; avoid concatenating filter values into SQL.
+-- Boundary prompts: empty range, end timestamp boundary, null status, unknown status.
+-- TODO: compare a narrow DTO projection with loading full order entities in the Java module.

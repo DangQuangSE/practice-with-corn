@@ -1,0 +1,5 @@
+-- SQL-10 · Core / Medium · migration, seed, and safe data correction
+-- V1__initial_schema.sql is the current Flyway baseline.
+-- TODO: add a V2 migration that adds a non-null field using a safe staged/backfill strategy.
+-- TODO: provide idempotent synthetic seed data and a correction query with a narrow WHERE + RETURNING.
+-- Acceptance: existing rows remain valid; migration order is reproducible; no unbounded DELETE.

@@ -1,0 +1,8 @@
+:root { color-scheme: light; font-family: Arial, sans-serif; color: #17212b; background: #f5f7fa; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; }
+form { display: grid; gap: .6rem; max-width: 25rem; margin: 1rem 0; }
+input, button { font: inherit; padding: .6rem; }
+a, button { cursor: pointer; }
+:focus-visible { outline: 3px solid #1769aa; outline-offset: 2px; }

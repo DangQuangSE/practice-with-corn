@@ -1,0 +1,30 @@
+openapi: 3.1.0
+info:
+  title: Practice Items API
+  version: 1.0.0
+  description: Starter contract for exercises BE-01, BE-04, BE-05, BE-06, and BE-10.
+servers:
+  - url: http://localhost:8080
+paths:
+  # TODO BE-10: describe list, detail, create, update, soft-delete, and restore operations.
+components:
+  schemas:
+    ItemRequest:
+      type: object
+      required: [name, price]
+      properties:
+        name:
+          type: string
+          maxLength: 80
+        price:
+          type: number
+          minimum: 0
+    ProblemDetail:
+      type: object
+      required: [title, status]
+      properties:
+        type: { type: string, format: uri-reference }
+        title: { type: string }
+        status: { type: integer }
+        detail: { type: string }
+        instance: { type: string, format: uri-reference }

@@ -25,7 +25,9 @@
 - Do not treat route guards as authorization; every protected API operation enforces access server-side.
 - Cookie-authenticated state changes must include a CSRF defense; credentialed CORS must have explicit origins.
 
+Preflight: Phase 02 established the standalone Spring Boot/Next.js workspace pattern, DTO/Problem Details contract, and public-config versus secret boundary. Use a separate stateless Bearer API workspace and stateful browser-session workspace; keep CSRF enabled for cookie-authenticated mutations, use Spring Security Resource Server and PasswordEncoder/Nimbus APIs, and provide only environment-based local key configuration. Next.js displays auth/access states but never owns API authorization or token persistence.
+
 ## Quality and Testing State
 
-- Quality: not evaluated
-- Testing: not started
+- Quality: skipped by user; no `ck:quality` gate was run.
+- Testing: not started; unit tests were skipped by user. Maven package and Next.js typecheck/production build were used as build/syntax checks only.

@@ -30,7 +30,9 @@
 - CORS allowlists must be explicit; do not use wildcard origins with credentials.
 - Request IDs may be logged, but credentials, passwords, access tokens, and refresh tokens must never be logged.
 
+Preflight: Existing Java DSA uses a compact Vietnamese prompt, one visible TODO work area, and local examples; no Spring or Next.js app existed before this phase. Keep BE and FE as separate, minimal workspaces with explicit DTO/component boundaries and mockable API calls. Pin Spring Boot 4.1.1 with Java 21 source compatibility and Next.js 16.3.6; Next requires Node 20.9+, while Node 24 LTS is the recommended runtime. Local tooling currently has JDK 24, Maven 3.9.9, and Node 22.15.0; build checks will use installed tools and no live service credentials.
+
 ## Quality and Testing State
 
-- Quality: not evaluated
-- Testing: not started
+- Quality: skipped by user; no `ck:quality` gate was run.
+- Testing: not started; unit tests were skipped by user. Maven package, TypeScript check, and Next.js production build were used as build/syntax checks only.

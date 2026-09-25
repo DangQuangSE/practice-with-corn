@@ -1,0 +1,4 @@
+-- SQL-06 · Core / Medium · subqueries and CTEs
+-- TODO: find accounts whose completed-order total exceeds the overall average account total.
+-- Use a named CTE for per-account totals and compare against a scalar aggregate.
+-- State how accounts with no completed orders should be treated.

@@ -1,0 +1,5 @@
+-- SQL-07 · Core / Medium · window functions and per-group ranking
+-- TODO: return each account's three highest-value completed orders.
+-- Expected columns: account_id, order_id, total_price, rank_in_account.
+-- Choose ROW_NUMBER/RANK/DENSE_RANK deliberately and make final output ordering explicit.
+-- Extension: adapt Challenge 4 in ../day1.sql using LAG and a 15-minute interval.

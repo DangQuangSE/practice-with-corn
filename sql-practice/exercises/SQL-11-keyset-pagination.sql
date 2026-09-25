@@ -1,0 +1,4 @@
+-- SQL-11 · Extension / Medium · offset vs keyset pagination
+-- TODO: compare page 2 by OFFSET with the next page after a (created_at, order_id) cursor.
+-- Keep ordering stable with both created_at and the unique order_id tie-breaker.
+-- Explain which inserts between requests can make offset pagination skip/duplicate rows.

@@ -33,7 +33,9 @@
 - Bound retry/timeouts and prevent secrets or personal data from being sent to observability tools.
 - Avoid claims of exactly-once delivery or production-grade HA from a one-node practice setup.
 
+Preflight: Phase 05 defines safe upload, audit, and job-like state patterns; Phase 06 provides local Redis/Mailpit/PostgreSQL and operational labs. RabbitMQ and WebSocket stay separate Compose/application exercises. Provider adapters use server-only configuration and fake defaults.
+
 ## Quality and Testing State
 
-- Quality: not evaluated
-- Testing: not started
+- Quality: skipped by user for this implementation pass
+- Testing: unit tests skipped by user; Maven package and Next.js typecheck/build passed

@@ -32,7 +32,9 @@
 - Do not claim exactly-once behavior for retries or distributed workflows.
 - File fixtures are harmless, size-bounded, and locally resettable; do not require Cloudinary credentials in FILE-01.
 
+Preflight: Phase 03 established the shared PostgreSQL schema, deterministic synthetic fixtures, and DTO/projection pattern; Phase 04 keeps browser auth and bearer auth separate. Each Phase 05 workspace will own its state/fixture, use BigDecimal and explicit state transitions, and keep upload/import limits bounded. Paired Next.js tasks use typed DTOs and mock responses; no workflow depends on the Phase 02 starter being implemented.
+
 ## Quality and Testing State
 
-- Quality: not evaluated
-- Testing: not started
+- Quality: skipped by user for this implementation pass
+- Testing: unit tests skipped by user; Maven package and Next.js typecheck/build passed

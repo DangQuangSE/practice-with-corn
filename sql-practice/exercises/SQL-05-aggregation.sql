@@ -1,0 +1,4 @@
+-- SQL-05 · Core / Medium · GROUP BY, aggregates, HAVING
+-- TODO: compute category revenue from completed orders via order_lines.
+-- Return category, units_sold, revenue; include only categories above a chosen revenue threshold.
+-- Do not multiply the order total by joined line count; calculate from unit_price * quantity.

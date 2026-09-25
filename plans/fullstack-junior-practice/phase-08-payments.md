@@ -28,7 +28,9 @@ The local fake (PAY-01) can be completed without Redis, RabbitMQ, Cloudinary, We
 - Keep payment state transitions auditable and idempotent; do not store sensitive payment credentials.
 - Provider documentation is version-sensitive: cite the official docs in the exercise and re-check signatures/parameters when implementing.
 
+Preflight: Phase 05 models trusted order totals, state transitions, and idempotency; Phase 07 provides the generic webhook-signature boundary. Phase 08 starts with a fake provider; provider-specific callback canonicalization remains tied to the linked official docs.
+
 ## Quality and Testing State
 
-- Quality: not evaluated
-- Testing: not started
+- Quality: skipped by user for this implementation pass
+- Testing: unit tests skipped by user; Maven package and Next.js typecheck/build passed

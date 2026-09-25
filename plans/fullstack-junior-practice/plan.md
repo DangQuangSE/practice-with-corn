@@ -1,6 +1,6 @@
 # Junior Fullstack Practice Curriculum Plan
 
-**Status:** Draft for learner review
+**Status:** Complete
 **Planning mode:** Hard
 **Test mode:** Default (no TDD flag requested)
 **Spec:** [spec.md](spec.md)
@@ -46,6 +46,19 @@
 | [06 — Testing, Docker, and CI](phase-06-quality-devops.md) | Verification exercises and repaired/expanded local operations learning path | P1 independent verification; P1 local DevOps; P2 optional tooling | Phases 02–05 (tests may be authored alongside earlier phases) |
 | [07 — Service and realtime integrations](phase-07-integrations.md) | Redis, RabbitMQ, Cloudinary, WebSocket, email, OAuth, scheduled jobs, and external API adapters as independent modules | P2 | Phases 03–06 |
 | [08 — Payment lifecycle and providers](phase-08-payments.md) | Local fake lifecycle first, then optional PayOS/VNPay adapters, verification, and reconciliation | P2 | Phases 02 and 05; Phase 06 testing conventions are recommended. Phase 07 is optional. |
+
+## Implementation progress
+
+User-selected checks for all phases: unit tests are skipped; `ck:quality` gates are skipped. Build/syntax checks remain in scope. The curriculum still includes test-practice exercises where specified; this decision only skips running a unit-test authoring/verification pass during implementation.
+
+- [x] Phase 01 — Curriculum structure and authoring rules [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
+- [x] Phase 02 — Spring REST and Next.js foundations [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
+- [x] Phase 03 — PostgreSQL, JPA, and SQL migration [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
+- [x] Phase 04 — Authentication and security [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
+- [x] Phase 05 — Business workflows [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
+- [x] Phase 06 — Testing, Docker, and CI [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
+- [x] Phase 07 — Service and realtime integrations [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
+- [x] Phase 08 — Payment lifecycle and providers [quality: skipped_by_user; decision: user_confirmed_skip] [testing: not_started; unit tests skipped by user]
 
 ## Completion and acceptance gates
 

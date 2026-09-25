@@ -24,7 +24,9 @@
 - Preserve DSA and Java-interview material and pre-existing user changes.
 - Do not create a monorepo product/capstone or force every competency into a paired task.
 
+Preflight: Existing practice is organized as focused topic folders, with Vietnamese Markdown theory linking to independent source files; Java DSA uses one class per file and a local `Check.java`. The interview theory track is documentation-only, while existing DevOps files are drafts. Keep new exercises isolated by stable ID, keep shared briefs/contracts in docs, use no shared growing application, and preserve existing tracks and scripts.
+
 ## Quality and Testing State
 
-- Quality: not evaluated
-- Testing: not started
+- Quality: skipped by user; no `ck:quality` gate was run.
+- Testing: not started; unit tests were skipped by user. Phase 01 is documentation/scaffolding only.

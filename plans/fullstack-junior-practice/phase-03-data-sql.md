@@ -26,7 +26,9 @@
 - Performance claims must be reproducible in relative/contextual terms, not an absolute millisecond gate.
 - Use bounded seed sizes by default. Any large generator must be opt-in and safe to reset locally.
 
+Preflight: The current SQL scripts are SQL Server-flavored and the repository has no PostgreSQL exercise harness yet. Existing DevOps Compose is a hand-written learning draft with local credentials; do not reuse those credentials/configuration. Existing Java exercises use small TODO scaffolds with a learner-readable README. Canonical schema/migrations will live under `sql-practice`, use PostgreSQL 18.6, deterministic bounded seed data, and no required database test run; optional large data remains opt-in.
+
 ## Quality and Testing State
 
-- Quality: not evaluated
-- Testing: not started
+- Quality: skipped by user; no `ck:quality` gate was run.
+- Testing: not started; unit tests were skipped by user. Maven package and SQL script execution were used as build/syntax checks only.

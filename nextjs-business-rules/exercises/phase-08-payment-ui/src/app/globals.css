@@ -1,0 +1,9 @@
+:root { color-scheme: light; font-family: Arial, sans-serif; color: #17212b; background: #f5f7fa; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 48rem; margin: 2rem auto; padding: 0 1rem 3rem; }
+section { margin: 2rem 0; padding: 1.25rem; background: white; border: 1px solid #d8e0e8; border-radius: .5rem; }
+button { font: inherit; padding: .6rem .8rem; cursor: pointer; }
+.notice { padding: .8rem; border-left: 4px solid #1769aa; background: #edf5fc; }
+.muted { color: #4c5b69; }
+:focus-visible { outline: 3px solid #1769aa; outline-offset: 2px; }

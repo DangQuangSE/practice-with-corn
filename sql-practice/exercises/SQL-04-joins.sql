@@ -1,0 +1,5 @@
+-- SQL-04 · Core / Medium · INNER/LEFT JOIN and relationship queries
+-- TODO: list every account and its completed-order count, including accounts with no matches.
+-- Use a LEFT JOIN and put status filtering in a place that preserves unmatched accounts.
+-- Expected columns: account_id, customer_name, completed_order_count.
+-- Add deterministic ORDER BY account_id.

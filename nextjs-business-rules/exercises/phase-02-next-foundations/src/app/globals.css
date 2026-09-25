@@ -1,0 +1,23 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #17212b;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 60rem; margin: 2rem auto; padding: 0 1rem; }
+.site-header { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem max(1rem, calc((100vw - 60rem) / 2)); background: #fff; }
+.site-header nav { display: flex; gap: 1rem; }
+.brand { font-weight: 700; }
+a { color: #075ea8; }
+form { display: grid; gap: 0.6rem; max-width: 28rem; }
+input, button { font: inherit; padding: 0.6rem; }
+button { width: fit-content; }
+.exercise-list { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+
+@media (max-width: 36rem) {
+  .site-header { flex-direction: column; }
+  .site-header nav { flex-wrap: wrap; }
+}

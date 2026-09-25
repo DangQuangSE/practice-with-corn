@@ -1,0 +1,4 @@
+-- SQL-12 · Core / Medium · adapted legacy challenge set
+-- Complete the five prompts in ../day1.sql using SQL-02/04/05/06/07/09 as references.
+-- For each query, state output columns, deterministic ordering, and the fixture size used.
+-- Do not port SQL Server plan names or fixed runtime promises.

@@ -1,0 +1,4 @@
+-- SQL-01 · Core / Easy · relational modeling and constraints
+-- The shared schema is in ../schema.sql. Add a separate practice table for saved addresses.
+-- TODO: require a parent account, make each account/email pair unique, and validate a two-letter country code.
+-- Acceptance: invalid/null owner and duplicate email fail; two addresses may belong to one account.
