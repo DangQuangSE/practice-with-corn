@@ -63,4 +63,4 @@ nbdist/
 *.temp
 *.swp
 *.swo
-
+*.codex
